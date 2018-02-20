@@ -9,13 +9,15 @@
   "keywords": [
     "require",
     "hook",
-    "path",
-    "dir"
+    "path"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuezhihan/require-plus.git"
+    "url": "https://github.com/yuezhihan/require-plus.git"
   },
   "author": "Zhihan Yue",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuezhihan/require-plus/issues"
+  }
 }
