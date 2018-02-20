@@ -37,12 +37,12 @@ When our project contains many layers of directory, the relative path of each mo
 When faced with the problem, you might tend to find a unified way to access the `posts` module, just like me. I used to require modules by this way:
 
 ```js
-require(ROOT_PATH + 'application/apis/controllers/posts');
+require(ROOT_PATH + '/application/apis/controllers/posts');
 // other require()...
-require(ROOT_PATH + 'application/apis/controllers/users');
-require(ROOT_PATH + 'application/apis/controllers/products');
-require(ROOT_PATH + 'application/apis/services/rest');
-require(ROOT_PATH + 'application/apis/config');
+require(ROOT_PATH + '/application/apis/controllers/users');
+require(ROOT_PATH + '/application/apis/controllers/products');
+require(ROOT_PATH + '/application/apis/services/rest');
+require(ROOT_PATH + '/application/apis/config');
 ```
 
 emmmm... It's more maintainable than before. But, `ROOT_PATH` is ugly, isn't it?
