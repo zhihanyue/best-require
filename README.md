@@ -1,10 +1,10 @@
-Best Require
-=============
-
 [![Build Status](https://travis-ci.org/yuezhihan/best-require.svg)](https://travis-ci.org/yuezhihan/best-require)
 [![NPM version](https://img.shields.io/npm/v/best-require.svg)](https://www.npmjs.com/package/best-require)
 
-Best Require is a `require()` hook plugin for requiring a module in your project elegantly for Node.js.
+Best Require
+=============
+
+**Best Require** is a `require()` hook plugin for requiring a module in your project elegantly for Node.js.
 
 ```js
 require(':controllers/posts');
@@ -52,7 +52,7 @@ emmmm... It's more maintainable than before. But, `ROOT_PATH` is ugly, isn't it?
 
 #### Solution
 
-Let's try to use Best Require, by adding this at the beginning of the app:
+Let's try to use **Best Require**, by adding this at the beginning of the app:
 
 ```js
 require('best-require')(process.cwd())
