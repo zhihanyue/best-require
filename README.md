@@ -1,3 +1,6 @@
+Require Plus
+=============
+
 Require Plus is a `require()` hook plugin for requiring a module in your project elegantly for Node.js.
 
 ```js
@@ -6,15 +9,17 @@ require(':models/Users');
 require('~/application/apis/config');
 ```
 
-# Install
+Install
+--------
 
 ```js
 npm install require-plus
 ```
 
-# Introduction
+Introduction
+-------------
 
-## Background
+#### Background
 
 Have you ever coded like this in your application?
 
@@ -42,7 +47,7 @@ require(ROOT_PATH + 'application/apis/config');
 
 emmmm... It's more maintainable than before. But, `ROOT_PATH` is ugly, isn't it?
 
-## Solution
+#### Solution
 
 Let's try to use Require Plus, by adding this at the beginning of the app:
 
@@ -79,7 +84,8 @@ require(':apis/services/rest');
 require(':apis/config');
 ```
 
-# Usage
+Usage
+------
 
 Add this at the beginning of the program:
 
