@@ -12,12 +12,14 @@ require('~/application/apis/config');
 Install
 --------
 
-```js
+```bash
 npm install require-plus
 ```
 
 Introduction
 -------------
+
+[TOC]
 
 #### Background
 
