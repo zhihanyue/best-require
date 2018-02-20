@@ -1,0 +1,21 @@
+{
+  "name": "require-plus",
+  "version": "1.0.0",
+  "description": "A require() hack plugin for requiring a module in your project elegantly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "require",
+    "hook",
+    "path",
+    "dir"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuezhihan/require-plus.git"
+  },
+  "author": "Zhihan Yue",
+  "license": "MIT"
+}
