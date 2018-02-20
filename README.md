@@ -12,11 +12,11 @@ require(':models/Users');
 require('~/application/apis/config');
 ```
 
-Install
---------
+Installation
+-------------
 
 ```bash
-npm install best-require
+npm install best-require --save
 ```
 
 Introduction
