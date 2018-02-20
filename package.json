@@ -1,7 +1,7 @@
 {
   "name": "require-plus",
   "version": "1.0.0",
-  "description": "A require() hack plugin for requiring a module in your project elegantly",
+  "description": "A require() hook plugin for requiring a module in your project elegantly for Node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
