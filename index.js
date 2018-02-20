@@ -13,7 +13,7 @@ module.exports = function(root, map) {
     root = root || process.cwd();
     map = map || {};
     if(! root.startsWith('/')) {
-        throw new Error('require-plus: the root path must be absolute!');
+        throw new Error('BestRequire: the root path must be absolute!');
     }
     const old = module.__proto__.require;
     module.__proto__.require = function(id, ...args) {
