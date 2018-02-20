@@ -19,8 +19,6 @@ npm install require-plus
 Introduction
 -------------
 
-[TOC]
-
 #### Background
 
 Have you ever coded like this in your application?
