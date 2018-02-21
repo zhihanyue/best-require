@@ -72,7 +72,7 @@ However, this directory name is still a bit long, which can be shortened in this
 
 ```js
 require('best-require')(process.cwd(), {
-    apis: process.cwd() + '/app/apis',
+    apis: process.cwd() + '/application/apis',
     controllers: process.cwd() + '/application/apis/controllers'
 });
 ```
