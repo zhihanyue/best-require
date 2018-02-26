@@ -1,6 +1,6 @@
 {
   "name": "best-require",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A require() hook plugin for requiring a module in your project elegantly for Node.js",
   "main": "index.js",
   "scripts": {
