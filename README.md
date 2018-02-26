@@ -37,7 +37,7 @@ require('../../../apis/controllers/posts');
 
 When our project contains many layers of directory, the relative path of each module will become complicated, which not only makes us very confused, but also makes the project difficult to maintain.
 
-When faced with the problem, you might tend to find a unified way to access the `posts` module, just like me. I used to require modules by this way:
+When faced with the problem, you might tend to find a unified way to access the `posts` module, just like me. I used to require modules in this way:
 
 ```js
 require(ROOT_PATH + '/application/apis/controllers/posts');
@@ -48,7 +48,7 @@ require(ROOT_PATH + '/application/apis/services/rest');
 require(ROOT_PATH + '/application/apis/config');
 ```
 
-emmmm... It's more maintainable than before. But, `ROOT_PATH` is ugly, isn't it?
+ummmm... It's more maintainable than before. But, `ROOT_PATH` is ugly, isn't it?
 
 #### Solution
 
@@ -68,17 +68,17 @@ require('~/application/apis/services/rest');
 require('~/application/apis/config');
 ```
 
-However, this directory name is still a bit long, which can be shortened in this way:
+However, this directory name is still a bit long, which can be shortened by defining the name mapping:
 
 ```js
 const ROOT_PATH = process.cwd();
 require('best-require')(ROOT_PATH, {
-    apis: '~/application/apis',
-    controllers: ':apis/controllers'
+    apis: ROOT_PATH + '/application/apis',
+    controllers: ROOT_PATH + '/application/apis/controllers'
 });
 ```
 
-Then we are supposed to use `:apis` for `~/application/apis` and `:controllers` for `~/application/apis/controllers`.
+Then we are able to use `:apis` for `~/application/apis` and `:controllers` for `~/application/apis/controllers`:
 
 ```js
 require(':controllers/posts');
@@ -87,6 +87,16 @@ require(':controllers/products');
 require(':apis/services/rest');
 require(':apis/config');
 ```
+
+With the latest release V1.1.0, you can also use other keys in the definition of a key-value pair in the name mapping, and our plug-in will automatically handle the keys' dependencies on each other. Therefore, the definition can be simplified as:
+
+```js
+require('best-require')(ROOT_PATH, {
+    apis: '~/application/apis',
+    controllers: ':apis/controllers'
+});
+```
+
 
 Usage
 ------

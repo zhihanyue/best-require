@@ -1,7 +1,10 @@
 const assert = require('assert');
 require('../index.js')(process.cwd(),{
-    d1: process.cwd() + '/test/bar/d1',
-    d3: process.cwd() + '/test/foo/d3'
+    d1: ':bar/d1',
+    d3: ':foo/d3',
+    foo: ':t/foo',
+    bar: ':t/bar',
+    t: '~/test'
 });
 assert.strictEqual(require('~/test/bar/d1/a'), 1);
 assert.strictEqual(require(':d1/a'), 1);
