@@ -71,13 +71,14 @@ require('~/application/apis/config');
 However, this directory name is still a bit long, which can be shortened in this way:
 
 ```js
-require('best-require')(process.cwd(), {
-    apis: process.cwd() + '/application/apis',
-    controllers: process.cwd() + '/application/apis/controllers'
+const ROOT_PATH = process.cwd();
+require('best-require')(ROOT_PATH, {
+    apis: '~/application/apis',
+    controllers: ':apis/controllers'
 });
 ```
 
-Then we are supposed to use `:api` for `~/application/apis` and `:controllers` for `~/application/apis/controllers`.
+Then we are supposed to use `:apis` for `~/application/apis` and `:controllers` for `~/application/apis/controllers`.
 
 ```js
 require(':controllers/posts');
