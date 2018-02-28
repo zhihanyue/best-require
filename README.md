@@ -88,7 +88,7 @@ require(':apis/services/rest');
 require(':apis/config');
 ```
 
-With the latest release V1.1.1, you can also use other keys in the definition of a key-value pair in the name mapping, and our plug-in will automatically handle the keys' dependencies on each other. Therefore, the definition can be simplified as:
+With the release V1.1+, you can also use other keys in the definition of a key-value pair in the name mapping, and our plug-in will automatically handle the keys' dependencies on each other. Therefore, the definition can be simplified as:
 
 ```js
 require('best-require')(ROOT_PATH, {
