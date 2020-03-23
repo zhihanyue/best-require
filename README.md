@@ -107,7 +107,7 @@ Add this at the beginning of the program:
 require('best-require')(
     root_path, // [optional] project root directory, defaults to `process.cwd()`
     name_mapping // [optional] name mapping
-)();
+);
 ```
 
 Then you can use:
